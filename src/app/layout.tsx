@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={classHelper(
-          'min-h-screen bg-background font-sans antialiased',
+          'min-h-screen bg-background font-sans antialiased dark',
           fontSans.variable,
         )}
       >
