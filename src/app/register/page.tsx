@@ -65,7 +65,12 @@ export default function RegisterPage({
               <strong>{` ${email}`}</strong>
             </p>
             <Input type="hidden" {...register('email')} />
-            <Input type="password" label="Password" {...register('password')} />
+            <Input
+              type="password"
+              label="Password"
+              error={errors.password?.message}
+              {...register('password')}
+            />
             <Button type="submit" isLoading={status === 'loading'}>
               Create password
             </Button>
