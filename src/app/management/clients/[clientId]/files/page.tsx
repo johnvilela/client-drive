@@ -1,7 +1,9 @@
+import { ListFiles } from '@/components/ui/listFiles';
+
 export default function ClientFilesPage() {
   return (
     <div>
-      <h1>ClientFilesPage</h1>
+      <ListFiles />
     </div>
   );
 }
