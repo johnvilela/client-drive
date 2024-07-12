@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
+import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
 export default function SignUpPage() {
@@ -27,7 +28,9 @@ export default function SignUpPage() {
             <Input label="Name" type="text" />
             <Input label="Email" type="email" defaultValue={email || ''} />
             <Input label="Password" type="password" />
-            <Button type="submit">Sign up</Button>
+            <Button type="submit" asChild>
+              <Link href="/management/clients">Sign up</Link>
+            </Button>
           </form>
         </CardContent>
       </Card>

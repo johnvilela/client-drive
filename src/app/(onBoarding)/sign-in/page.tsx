@@ -28,7 +28,9 @@ export default function SignInPage() {
           <form className="flex flex-col gap-2">
             <Input label="Email" type="email" defaultValue={email || ''} />
             <Input label="Password" type="password" />
-            <Button type="submit">Sign in</Button>
+            <Button type="submit" asChild>
+              <Link href="/management/clients">Sign in</Link>
+            </Button>
             <Button variant="outline" asChild>
               <Link href="/sign-up">Create an account</Link>
             </Button>
