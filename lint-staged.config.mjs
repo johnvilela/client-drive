@@ -3,7 +3,6 @@ const lintStagedConfig = {
   'src/*': [
     'eslint --cache --fix ./src',
     'prettier --write --ignore-unknown ./src',
-    'git add .',
   ],
 };
 
