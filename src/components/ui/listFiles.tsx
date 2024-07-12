@@ -1,4 +1,4 @@
-import { Download, Trash2 } from 'lucide-react';
+import { Download, Eye, Trash2 } from 'lucide-react';
 import { Button } from './button';
 import {
   Table,
@@ -27,7 +27,7 @@ export function ListFiles() {
           <TableCell>15/07/2023</TableCell>
           <TableCell className="text-right">
             <Button variant="ghost" size="icon">
-              <Download size={16} />
+              <Eye size={16} />
             </Button>
             <Button variant="ghost" size="icon">
               <Download size={16} />

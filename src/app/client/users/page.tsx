@@ -1,7 +1,9 @@
+import { ListUser } from '@/components/ui/listUser';
+
 export default function ClientUsersPage() {
   return (
     <div>
-      <h1>ClientUsersPage</h1>
+      <ListUser />
     </div>
   );
 }
